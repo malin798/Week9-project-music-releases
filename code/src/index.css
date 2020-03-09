@@ -55,10 +55,11 @@ p {
   display: flex;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   align-self: center;
   margin-bottom: 5px;
-  width: 300px;
-  height: 300px;
+  width: 450px;
+  height: 450px;
 }
 
 .album-card {
@@ -91,10 +92,10 @@ p {
   width: 30px;
 }
 
-/* svg {
+ svg {
   fill: white;
 } 
-
+/*
 Funkar inte att byta färg... vet ej varför...
 Behöver också göra bilden mörkare när man hovrar över den.. behöver även dölja "hover-items"
 */

@@ -8,8 +8,8 @@ const AlbumImage = (props) => {
   }
 
   return (
-    <div className="album-image">
-      <div className="hover-items" style={styles}>
+    <div className="album-image" style={styles}>
+      <div className="hover-items" >
         <Icons />
       </div>
     </div>
@@ -24,13 +24,12 @@ const AlbumDetails = (props) => {
       <p className="album-name">
         {album.name}
       </p>
-
       <div className="artists-name">
         {props.artists.map(artist => {
           return (
           <p className="artist">
-          {artist.name}
-          {/* De lägger sig bara på rad... inget mellanrum mellan dom när det är flera..  */}
+          <span>{artist.name}&nbsp; </span>
+          {/* vet inte hur vi ska få ett kommatecken mellan varje artist.. :P */}
           </p>
         
           )
@@ -49,8 +48,8 @@ const Album = () => {
         console.log("album",album)
       return (
         <article className="album-card" key={album.id} >
-        <AlbumImage image={album.images[1]}/>
-        <div>
+        <AlbumImage image={album.images[0]}/>
+        <div className="album-details">
         <AlbumDetails artists={album.artists} album={album}/>
         </div>
         </article> 
