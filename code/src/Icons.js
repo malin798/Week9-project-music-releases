@@ -2,19 +2,27 @@ import React from 'react'
 
 export const Heart = () => { 
   return (
-    <img className="icon" src="./icons/like.svg"></img>
+<svg className="icon" width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="white" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
   )
 }
 
 export const Play = () => {
   return (
-   <img className="icon big" src="./icons/play-button-svgrepo-com.svg"></img>
+    <svg className="icon" width="64px" height="64px" fill="white">
+    <path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
+      c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15
+      C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"/>
+    <path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30
+      S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"/>
+    </svg>
   )
 }
 
 export const Dots = () => {
   return (
-    <img className="icon" src="./icons/dots.svg"></img>
+    <svg className="icon" width="54px" height="54px" fill="white">
+      <g><circle cx="2.5" cy="12.5" r="2.5"/><circle cx="12" cy="12.5" r="2.5"/><circle cx="21.5" cy="12.5" r="2.5"/></g>
+    </svg>
   )
 }
 
@@ -22,11 +30,9 @@ export const Dots = () => {
 export const Icons = () => {
   return (
     <>
-      
       <Heart />
       <Play />
       <Dots />
-      
     </>
   )
-}
+} 
