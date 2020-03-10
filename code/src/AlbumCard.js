@@ -11,10 +11,10 @@ const AlbumImage = (props) => {
 
   return (
     <>
-    <a href={props.album.external_urls.spotify} className="album-image" id="albumImage" target="_blank" style={styles}>
+    <a href={props.album.external_urls.spotify} className="album-image" target="_blank" style={styles}>
     </a>
-    <div className="hover-items" id="hoverItems">
-    <Icons />
+    <div className="hover-items">
+      <Icons />
     </div>
     </>
   )}

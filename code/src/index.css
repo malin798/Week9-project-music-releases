@@ -38,8 +38,8 @@ code {
 
 .all-albums {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-content: center;
   flex-wrap: wrap;
 }
 
@@ -47,16 +47,14 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  margin: 20px;
-  width: 100%;
+  margin: 5px 20px;
+  width: 90%;
   height: 390px;
+  z-index: 2;
 }
 
 .album-image {
   display: flex;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   align-self: center;
   align-items: center;
   margin-bottom: 5px;
@@ -64,15 +62,30 @@ code {
   height: 100%;
   cursor: pointer;
   position: relative;
-  z-index: 2;
 }
 
-.album-image:hover .hover-items {
+.album-image {
+  width: 100%;
+  height: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.hover-items:hover { 
   opacity: 1;
 }
 
-.album-image:hover {
-  filter: brightness(70%);
+.album-card:hover ~ .album-image {
+  filter: brightness(45%);
+}
+
+.album-card:hover > .hover-items {
+  opacity: 1;
+}
+
+.album-card:hover > .album-image {
+  filter: brightness(45%);
 }
 
 .hover-items {
@@ -82,8 +95,8 @@ code {
   width: inherit;
   height: fit-content;
   position: absolute;
-  margin: 8% 0px;
-  z-index: 100;
+  margin: 37% 0;
+  opacity: 0;
 }
 
 .icon {
@@ -112,9 +125,19 @@ code {
 
 @media (min-width: 668px) { /* Styling tablet */
   
+  .all-albums {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hover-items {
+    margin: 13% 0;
+  }
+
   .album-card {
   width: 40%;
-  height: 380;
+  height: 430px;
+  margin: 15px 20px;
   }
 
 }
@@ -123,7 +146,11 @@ code {
 
   .album-card {
     width: 22%;
-    height: 400px;
+    height: 470px;
+  }
+
+  .hover-items {
+    margin: 9% 0;
   }
 
   .icon:active {
