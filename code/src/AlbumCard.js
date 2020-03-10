@@ -10,11 +10,13 @@ const AlbumImage = (props) => {
   }
 
   return (
+    <>
     <a href={props.album.external_urls.spotify} className="album-image" id="albumImage" target="_blank" style={styles}>
-      <div className="hover-items" id="hoverItems">
-        <Icons />
-      </div>
     </a>
+    <div className="hover-items" id="hoverItems">
+    <Icons />
+    </div>
+    </>
   )}
 
 const AlbumDetails = (props) => {
@@ -30,7 +32,6 @@ const AlbumDetails = (props) => {
         <a href= {artist.external_urls.spotify} className="artists-name" target="_blank">
         <p className="artist">
         <span>{artist.name}&nbsp; </span>
-        {/* vet inte hur vi ska få ett kommatecken mellan varje artist.. :P */}
         </p>
         </a>
         )})}
