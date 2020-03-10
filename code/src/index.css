@@ -67,11 +67,9 @@ code {
   z-index: 2;
 }
 
-.album-image:hover .hover-items {
-  opacity: 1;
-}
 
-.album-image:hover {
+
+.album-card:hover .album-image { /**/
   filter: brightness(70%);
 }
 
@@ -84,6 +82,12 @@ code {
   position: absolute;
   margin: 8% 0px;
   z-index: 100;
+  opacity: 0;
+}
+
+.album-card:hover .hover-items,
+.album-image:focus ~ .hover-items {
+  opacity: 1;
 }
 
 .icon {
