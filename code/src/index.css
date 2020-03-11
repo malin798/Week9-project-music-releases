@@ -101,11 +101,11 @@ img {
   width: inherit;
   height: fit-content;
   z-index: 100;
-  opacity: 1; 
+  opacity: 0; 
 }
 
-.album-image:hover .hover-items,
-.album-image:focus ~ .hover-items {
+.album-cover:hover .hover-items,
+.album-cover:focus ~ .hover-items {
   opacity: 1;
 } 
 
