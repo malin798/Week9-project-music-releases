@@ -67,12 +67,6 @@ code {
   z-index: 2;
 }
 
-
-
-.album-card:hover .album-image { /**/
-  filter: brightness(70%);
-}
-
 .hover-items {
   display: inline-flex;
   justify-content: space-evenly;
@@ -83,6 +77,10 @@ code {
   margin: 8% 0px;
   z-index: 100;
   opacity: 0;
+}
+
+.album-card:hover .album-image {
+  filter: brightness(70%);
 }
 
 .album-card:hover .hover-items,
@@ -123,10 +121,11 @@ code {
 
 }
 
-@media (min-width: 1025px) { /* Styling desktop*/
+@media (min-width: 992px) { /* Styling desktop*/
 
   .album-card {
     width: 22%;
+    margin: 20px 0;
     height: 400px;
   }
 
