@@ -1,7 +1,5 @@
 import React from "react"
 import {Icons} from './Icons'
-// import data from './data.json's
-
 
 export const AlbumImage = (props) => {
     let {image, album} = props;
