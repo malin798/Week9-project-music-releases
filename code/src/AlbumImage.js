@@ -3,18 +3,19 @@ import {Icons} from './Icons'
 
 export const AlbumImage = (props) => {
     let {image, album} = props;
-  
-    const styles = {
-      backgroundImage:`url('${image.url}')`,
-    }
-  
+   
     return (
-      <>
-      <a href={album.external_urls.spotify} className="album-image" id="albumImage" target="_blank" style={styles}>
-      </a>
-      <div className="hover-items" id="hoverItems">
-      <Icons />
-      </div>
-      </>
-    )}
-  
+      <section className="album-cover">
+        
+        <a href={album.external_urls.spotify} target="_blank">
+          <img className="album-image" src={image.url}></img>
+          </a>
+          <div className="darken-image">
+            <div className="hover-items" id="hoverItems">
+            <Icons />
+            </div>
+          </div>
+        
+      </section>
+    )
+    }
