@@ -64,6 +64,7 @@ code {
   position: relative;
 }
 
+
 .album-image {
   width: 100%;
   height: inherit;
@@ -72,20 +73,9 @@ code {
   background-size: contain;
 }
 
-.hover-items:hover { 
-  opacity: 1;
-}
+.album-card:hover .album-image { /**/
+  filter: brightness(70%);
 
-.album-card:hover ~ .album-image {
-  filter: brightness(45%);
-}
-
-.album-card:hover > .hover-items {
-  opacity: 1;
-}
-
-.album-card:hover > .album-image {
-  filter: brightness(45%);
 }
 
 .hover-items {
@@ -95,8 +85,14 @@ code {
   width: inherit;
   height: fit-content;
   position: absolute;
-  margin: 37% 0;
+  margin: 8% 0px;
+  z-index: 100;
   opacity: 0;
+}
+
+.album-card:hover .hover-items,
+.album-image:focus ~ .hover-items {
+  opacity: 1;
 }
 
 .icon {
