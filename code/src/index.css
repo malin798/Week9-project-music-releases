@@ -1,7 +1,4 @@
 /* Styling text */
-*{
-  margin: 0; padding: 0; box-sizing: border-box;
-}
 
 h1 {
   font-size: 25px;
@@ -16,12 +13,11 @@ p {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-  color: unset;
-}
-
 /* Styling elements */
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -37,6 +33,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
 }
 
 .all-albums {
@@ -71,56 +72,19 @@ code {
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  /* position: relative; */
-  /* z-index: 0; */
 }
-
-/* .darken-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-} */
-
-/* a:hover {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) )
-} */
-
-.album-cover:hover .hover-items {
-  opacity: 1;
-}
-
-.hover-items:hover {
-  opacity: 1;
-}
-
-.album-cover:hover {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) )
-}
-
-/* .album-card:hover + .album-details {
-  background: transparent;
-} */
 
 .album-link {
   display: flex;
+  z-index: 50;
 }
 
 .album-cover {
   display: flex;
   position: relative;
-  /* z-index: 50; */
   height: 100%;
   width: 100%; 
   margin-bottom: 5px;
-}
-
-.album-cover a {
-  /* position: relative; */
-  z-index: 50;
 }
 
 .hover-items {
@@ -133,14 +97,9 @@ img {
   z-index: 100;
   align-self: center;
   margin-bottom: auto;
-    margin-top: auto;
+  margin-top: auto;
   opacity: 0; 
 }
-
-/* .album-cover:hover .hover-items,
-.album-cover:focus ~ .hover-items {
-  opacity: 1;
-}  */
 
 .icon {
   transition: all 1s;
@@ -161,6 +120,20 @@ img {
   font: 14px Helvetica #a0a0a0;
 }
 
+/* Hover effects */
+
+.album-cover:hover .hover-items {
+  opacity: 1;
+}
+
+.hover-items:hover {
+  opacity: 1;
+}
+
+.album-cover:hover {
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) )
+}
+
 .album-name:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -173,17 +146,9 @@ img {
     justify-content: center;
   }
 
-  /* .hover-items {
-    margin: 13% 0;
-  } */
-
   .album-card {
   width: 40%;
   margin: 20px;
-  }
-
-  .album-image {
-    width: 100%;
   }
   
 }
@@ -194,17 +159,13 @@ img {
     width: 30%;
     margin: 20px 10px;
   }
-
-  .album-image {
-    width: 100%;
-  }
    
-  .artists-name:hover {
+  .artists-name:hover{
     text-decoration: underline;
     color: #ffffff;
   }
 
-  .album-name:focus .album-name:hover {
+  .album-name:hover {
     text-decoration: underline;
   }
 
