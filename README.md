@@ -1,11 +1,10 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This was a first project to practice React and pair programming.
+The task was to build a page with new music releases. Displaying the different albums and links using data from an API and designing components in React. 
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The main problem was getting used to thinking in React, but with practice we managed that. 
+We used the liveshare in VS and worked through it together. 
 
 ## View it live
 https://admiring-tereshkova-e261c1.netlify.com/
